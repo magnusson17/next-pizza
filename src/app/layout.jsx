@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import ClientProvider from "./client-provider";
+import ClientProvider from "@/config/client-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 

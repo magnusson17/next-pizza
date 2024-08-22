@@ -1,20 +1,6 @@
-import { gql } from "@apollo/client";
 import Link from "next/link";
-import client from "../apollo-client";
-
-const GET_PIZZAS = gql`
-    query GetPizzas {
-        pizzas {
-            data {
-                id
-                attributes {
-                    title,
-                    price,
-                }
-            }
-        }
-    }
-`;
+import client from "@/config/apollo-client";
+import GET_PIZZAS from "@/query/get-pizzas";
 
 async function fetchPizzas() {
     try {
@@ -35,7 +21,7 @@ export default async function Pizzas() {
         <>
             <h1>PIZZAS</h1>
             <ul>{pizzas.map(pizza =>
-                <li key={pizza.attributes.id}><Link href={`/pizzas/${pizza.id}`}>{pizza.attributes.title}</Link></li>
+                <li key={pizza.id}><Link href={`/pizzas/${pizza.id}`}>{pizza.attributes.title}</Link></li>
             )}</ul>
         </>
     )
