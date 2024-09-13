@@ -49,7 +49,7 @@ export default async function Pizza({params}) {
 }
 
 // Function to generate static paths for all pizza pages
-export async function generateStaticParams() {
+/*export async function generateStaticParams() {
     const { data } = await client.query({
         query: GET_ALL_PIZZA_IDS,
     });
@@ -58,4 +58,4 @@ export async function generateStaticParams() {
     return data.pizzas.data.map((pizza) => ({
         id: pizza.id,
     }));
-}
+}*/
