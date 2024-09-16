@@ -1,0 +1,10 @@
+header ul {
+    display: flex;
+    column-gap: var(--gap-std);
+    background-color: #222;
+    padding: var(--gap-std);
+}
+
+header a {
+    color: white !important;
+}

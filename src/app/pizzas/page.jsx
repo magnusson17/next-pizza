@@ -18,11 +18,11 @@ export default async function Pizzas() {
     const pizzas = await fetchPizzas();
 
     return (
-        <>
-            <h1>PIZZAS</h1>
+        <div className="page page-pizzas">
+            <h1 className="page-pizzas__title title">PIZZAS</h1>
             <ul>{pizzas.map(pizza =>
                 <li key={pizza.id}><Link href={`/pizzas/${pizza.id}`}>{pizza.attributes.title}</Link></li>
             )}</ul>
-        </>
+        </div>
     )
 }

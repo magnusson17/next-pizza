@@ -18,15 +18,15 @@ export function SigninForm() {
     const [formState, formAction] = useFormState(loginUserAction, INITIAL_STATE);
 
     return (
-         <div>
+         <div className="page">
             <form action={formAction}>
                 <div>
-                     <div>
+                    <div>
                         <h2 >Sign In</h2>
                         <p>Enter your details to sign in to your account</p>
                     </div>
-                     <div>
-                         <div>
+                    <div>
+                        <div className="form-item form-type-textfield">
                             <label htmlFor="email">Email</label>
                             <input
                                 id="identifier"

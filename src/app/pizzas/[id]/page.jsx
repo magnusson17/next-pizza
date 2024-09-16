@@ -36,15 +36,18 @@ export default async function Pizza({params}) {
     const imageAlt = pizza.attributes.image?.data?.attributes?.alternativeText
 
     return (
-        <>
-            <h1>{pizza.attributes.title}</h1>
-            {imageUrl ? <img src={imageUrl} alt={imageAlt} /> : ''}
+        <div className="page page-single-pizza">
+            <h1 className="title">{pizza.attributes.title}</h1>
+            {imageUrl 
+                ? <div className="media-general-wrapper"><img src={imageUrl} alt={imageAlt} /></div>
+                : ''
+            }
             <ul>
                 {ingredients.map((el) => (
                     <li key={el.id}>{el.attributes.title}</li>
                 ))}
             </ul>
-        </>
+        </div>
     )
 }
 
