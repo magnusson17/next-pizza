@@ -50,7 +50,7 @@ export async function registerUserAction(prevState, formData) {
             ...prevState,
             strapiErrors: null,
             zodErrors: null,
-            message: "Ops! Something went wrong. Please try again.",
+            message: "Ops, Something went wrong. Please try again.",
         };
     }
 
@@ -109,7 +109,7 @@ export async function loginUserAction(prevState, formData) {
             ...prevState,
             strapiErrors: responseData.error,
             zodErrors: null,
-            message: "Ops! Something went wrong. Please try again.",
+            message: "Ops, Something went wrong. Please try again.",
         };
     }
   
