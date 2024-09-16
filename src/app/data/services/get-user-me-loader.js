@@ -1,4 +1,4 @@
-import { getAuthToken } from "./get-token";
+import { getAuthToken } from "@/app/data/services/get-token";
 import qs from "qs";
 
 const query = qs.stringify({
