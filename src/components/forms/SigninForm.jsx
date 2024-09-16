@@ -18,15 +18,15 @@ export function SigninForm() {
     const [formState, formAction] = useFormState(loginUserAction, INITIAL_STATE);
 
     return (
-        <div className="">
+         <div>
             <form action={formAction}>
                 <div>
-                    <div className="">
-                        <h2 className="">Sign In</h2>
+                     <div>
+                        <h2 >Sign In</h2>
                         <p>Enter your details to sign in to your account</p>
                     </div>
-                    <div className="">
-                        <div className="">
+                     <div>
+                         <div>
                             <label htmlFor="email">Email</label>
                             <input
                                 id="identifier"
@@ -36,7 +36,7 @@ export function SigninForm() {
                             />
                             <ZodErrors error={formState?.zodErrors?.identifier} />
                         </div>
-                        <div className="">
+                         <div>
                             <label htmlFor="password">Password</label>
                             <input
                                 id="password"
@@ -47,14 +47,14 @@ export function SigninForm() {
                             <ZodErrors error={formState.zodErrors?.password} />
                         </div>
                     </div>
-                    <div className="">
-                        <button className="">Sign In</button>
+                     <div>
+                        <button >Sign In</button>
                         <StrapiErrors error={formState?.StrapiErrors} />
                     </div>
                 </div>
-                <div className="">
+                 <div>
                     Don't have an account?
-                    <Link className="" href="signup">
+                    <Link  href="signup">
                         Sign Up
                     </Link>
                 </div>

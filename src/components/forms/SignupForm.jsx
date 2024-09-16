@@ -18,15 +18,15 @@ export function SignupForm() {
     const [formState, formAction] = useFormState(registerUserAction, INITIAL_STATE);
 
     return (
-        <div className="">
+         <div>
             <form action={formAction}>
                 <div>
-                    <div className="">
-                        <h2 className="">Sign Up</h2>
+                     <div>
+                        <h2 >Sign Up</h2>
                         <p>Enter your details to create a new account</p>
                     </div>
-                    <div className="">
-                        <div className="">
+                     <div>
+                         <div>
                             <label htmlFor="username">Username</label>
                             <input
                                 id="username"
@@ -36,7 +36,7 @@ export function SignupForm() {
                             />
                             <ZodErrors error={formState?.zodErrors?.username} />
                         </div>
-                        <div className="">
+                         <div>
                             <label htmlFor="email">Email</label>
                             <input
                                 id="email"
@@ -47,7 +47,7 @@ export function SignupForm() {
                             <ZodErrors error={formState?.zodErrors?.email} />
                         </div>
 
-                        <div className="">
+                         <div>
                             <label htmlFor="password">Password</label>
                             <input
                                 id="password"
@@ -58,14 +58,14 @@ export function SignupForm() {
                             <ZodErrors error={formState?.zodErrors?.password} />
                         </div>
                     </div>
-                    <div className="">
-                        <button className="">Sign Up</button>
+                     <div>
+                        <button >Sign Up</button>
                         <StrapiErrors error={formState?.StrapiErrors} />
                     </div>
                 </div>
-                <div className="">
+                 <div>
                     Have an account?
-                    <Link className="" href="signin">
+                    <Link  href="signin">
                         Sing In
                     </Link>
                 </div>

@@ -2,7 +2,7 @@ import { LogoutButton } from "@/components/custom/LogoutBtn";
 
 export default function Dashboard() {
     return (
-        <div className="">
+         <div>
             <h1>Dashboard</h1>
             <LogoutButton />
         </div>
