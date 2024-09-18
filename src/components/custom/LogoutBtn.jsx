@@ -1,4 +1,4 @@
-import { logoutAction } from "@/app/data/actions/auth-actions";
+import { logoutAction } from "@/data/actions/auth-actions";
 
 export function LogoutButton() {
     return (

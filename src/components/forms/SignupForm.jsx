@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useFormState } from "react-dom";
 
-import { registerUserAction } from "@/app/data/actions/auth-actions";
+import { registerUserAction } from "@/data/actions/auth-actions";
 import { ZodErrors } from "@/components/custom/ZodErrors";
 import { StrapiErrors } from "@/components/custom/StrapiErrors";
 

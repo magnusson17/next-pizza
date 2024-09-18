@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getUserMeLoader } from "@/app/data/services/get-user-me-loader";
+import { getUserMeLoader } from "@/data/services/get-user-me-loader";
 
 export async function middleware(request) {
     const user = await getUserMeLoader();
